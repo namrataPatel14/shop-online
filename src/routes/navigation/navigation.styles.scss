@@ -2,4 +2,11 @@
     padding: 30px;
     display: flex;
     justify-content: space-between;
+    .nav-links-container{
+        display: flex;
+        align-items: center;
+        .nav-link{
+           margin-right: 15px;
+        } 
+    }
 }
