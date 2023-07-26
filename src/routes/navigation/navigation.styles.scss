@@ -1,7 +1,12 @@
+
 .navigation {
     padding: 30px;
     display: flex;
     justify-content: space-between;
+    .logo-container img{
+        height: 50px;
+        width: 100%;
+    }
     .nav-links-container{
         display: flex;
         align-items: center;

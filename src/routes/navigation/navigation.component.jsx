@@ -11,17 +11,15 @@ import { signOutUser } from '../../utils/firebase/firebase.utils';
 const Navigation = () =>{
    const { currentUser } = useContext(UserContext);
    const { isCartOpen } = useContext(CartContext);
-   console.log(isCartOpen , "Navigation")
- 
     return(
         <Fragment>
            <div className='navigation'>
               <Link className='logo-container' to='/'>
-                 <div>Logo</div>
+                <img src={require('../../assets/logo.png')} alt="logo" resizeMode={'contain'}></img>
               </Link>
               <div className='nav-links-container'>
                 <Link className='nav-link' to='/shop'>
-                    SHOP
+                    Shop
                 </Link>
                 {
                   currentUser ?
