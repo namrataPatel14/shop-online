@@ -8,16 +8,19 @@ import CartDropdown from '../../components/cart-dropdown/cart-dropdown.component
 import { signOutUser } from '../../utils/firebase/firebase.utils';
 
 
+
 const Navigation = () =>{
    const { currentUser } = useContext(UserContext);
    const { isCartOpen } = useContext(CartContext);
     return(
         <Fragment>
            <div className='navigation'>
+              
               <Link className='logo-container' to='/'>
-                <img src={require('../../assets/logo.png')} alt="logo" resizeMode={'contain'}></img>
+                <img src={require('../../assets/logo.png')} alt="logo" ></img>
               </Link>
               <div className='nav-links-container'>
+              
                 <Link className='nav-link' to='/shop'>
                     Shop
                 </Link>

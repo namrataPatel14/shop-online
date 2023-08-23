@@ -49,7 +49,7 @@ const firebaseConfig = {
         acc[title.toLowerCase()] = items;
         return acc;
     }, {});
-
+    console.log(categoryMap, "categoryMap");
     return categoryMap;
   }
 
